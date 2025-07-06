@@ -1,4 +1,4 @@
-module github.com/trembon/switch-library-manager
+module github.com/firebat20/everything-base
 
 go 1.24
 

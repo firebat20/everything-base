@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/trembon/switch-library-manager/settings"
-	"github.com/trembon/switch-library-manager/switchfs/_crypto"
+	"everything-base/settings"
+	"everything-base/switchfs/_crypto"
 )
 
 const (

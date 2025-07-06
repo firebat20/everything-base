@@ -9,12 +9,13 @@ import (
 	"strconv"
 	"strings"
 
+	"everything-base/console"
+	"everything-base/db"
+	"everything-base/process"
+	"everything-base/settings"
+
 	"github.com/jedib0t/go-pretty/v6/table"
 	"github.com/schollz/progressbar/v3"
-	"github.com/trembon/switch-library-manager/console"
-	"github.com/trembon/switch-library-manager/db"
-	"github.com/trembon/switch-library-manager/process"
-	"github.com/trembon/switch-library-manager/settings"
 	"go.uber.org/zap"
 )
 

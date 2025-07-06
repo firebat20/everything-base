@@ -7,8 +7,9 @@ import (
 	"log"
 	"path/filepath"
 
+	"everything-base/settings"
+
 	"github.com/boltdb/bolt"
-	"github.com/trembon/switch-library-manager/settings"
 	"go.uber.org/zap"
 )
 

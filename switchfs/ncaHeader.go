@@ -6,7 +6,7 @@ import (
 	"encoding/hex"
 	"strconv"
 
-	"github.com/trembon/switch-library-manager/switchfs/_crypto"
+	"everything-base/switchfs/_crypto"
 )
 
 //https://switchbrew.org/wiki/NCA_Format

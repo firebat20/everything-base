@@ -1,7 +1,7 @@
 package main
 
 import (
-	"embed"
+	_ "embed"
 	"log"
 
 	"github.com/wailsapp/wails/v2"
@@ -11,9 +11,6 @@ import (
 	"github.com/wailsapp/wails/v2/pkg/options/mac"
 	"github.com/wailsapp/wails/v2/pkg/options/windows"
 )
-
-//go:embed all:frontend/dist
-var assets embed.FS
 
 //go:embed build/appicon.png
 var icon []byte

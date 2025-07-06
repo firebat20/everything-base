@@ -1,6 +1,7 @@
 package main
 
 import (
+	"embed"
 	"fmt"
 	"net/url"
 	"os"
@@ -8,10 +9,15 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/trembon/switch-library-manager/console"
-	"github.com/trembon/switch-library-manager/settings"
+	"everything-base/console"
+	"everything-base/gui"
+	"everything-base/settings"
+
 	"go.uber.org/zap"
 )
+
+//go:embed all:frontend/dist
+var assets embed.FS
 
 func main() {
 	exePath, err := os.Executable()
@@ -41,8 +47,7 @@ func main() {
 	sugar.Infof("[Executable: %v]", exePath)
 	sugar.Infof("[Working directory: %v]", workingFolder)
 
-	files, err := AssetDir(workingFolder)
-	if files == nil && err == nil {
+	if _, err := assets.ReadDir("frontend/dist"); err != nil {
 		appSettings.GUI = false
 	}
 
